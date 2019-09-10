@@ -1,0 +1,135 @@
+#classify{
+	background-color: white;
+	padding-top: 1rem;
+}
+header.headerbar{
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1rem;
+	padding: .28rem .2rem;
+	background: #f2f2f2;
+	color: #666;
+	font-size: .3rem;
+	text-align: center;
+}
+header.headerbar .left{
+	float: left;
+	width: .5rem;
+	height: .5rem;
+}
+header.headerbar .right{
+	float: right;
+	width: .6rem;
+	height: .6rem;
+}
+#classify .box{
+	display: flex;
+}
+#myScrollspy{
+	width: 1.7rem;
+	padding-right: 0.3rem;
+	/*flex-grow: 0;
+	flex-shrink: 0;*/
+}
+#myScrollspy ul{
+	height: 100%;
+	border-right: solid 1px #ddd;
+}
+#myScrollspy ul li{
+	height: .9rem;
+	/*display: list-item;*/
+	/*list-style: disc;*/
+}
+#myScrollspy ul li a:before{
+	content: "● ";
+	font-size: 0.2rem;
+}
+#myScrollspy ul li a{
+	background-color: white;
+	font-size: .24rem;
+	line-height: .9rem;
+	text-align: left;
+	color: #3c3c3c;
+	text-align: left;
+	padding: 0;
+}
+#myScrollspy ul li.active a:before{
+	content: "● ";
+	font-size: 0.3rem;
+}
+#myScrollspy ul li.active a{
+	font-size: .34rem;
+	color: #fb7d34;
+	transition: all 0.2s;
+}
+#scrollcontent{
+	width:5.2rem;
+	height: 12.5rem;
+	overflow-y: scroll;
+	padding: 0 .15rem;
+	/*flex-grow: 0;
+	flex-shrink: 0;*/
+}
+#scrollcontent .banner img{
+	width: 4.9rem;
+	height: 2rem;
+}
+#scrollcontent .title{
+	font-size: .28rem;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 0.5rem;
+	height: 1.28rem;
+	line-height: 1.28rem;
+	color: #3c3c3c;
+	position: relative;
+}
+#scrollcontent .title span:before{
+	content: " ";
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	display: inline-block;
+	border-top: 1px solid #e0e0e0;
+	width: .5rem;
+}
+#scrollcontent .title span:after{
+	content: " ";
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	display: inline-block;
+	border-top: 1px solid #e0e0e0;
+	width: .5rem;
+}
+#scrollcontent .item ul{
+	margin: 0rem;
+	padding: 0;
+}
+#scrollcontent .item ul li{
+	list-style: none;
+	float: left;
+	width: calc(100% / 3);
+	text-align: center;
+}
+#scrollcontent .item ul li img{
+	width: 1rem;
+	height: 1rem;
+}
+#scrollcontent .item ul li .name{
+	margin-top: .28rem;
+	font-size: .23rem;
+	color: rgba(0,0,0,.54);
+	white-space: nowrap;
+	overflow: hidden;
+}
+#scrollcontent .item .enter{
+	margin: 0.2rem 0;
+}
+#scrollcontent .item .enter img{
+	width: 5rem;
+	height: 0.8rem;	
+}

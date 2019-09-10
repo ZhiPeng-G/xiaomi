@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- 设置视口 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 引入bootstrap.css文件 -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+        <title>小米商城</title>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" type="text/css" href="classify.css"/>
+        <link rel="stylesheet" type="text/css" href="car.css"/>
+        <link rel="stylesheet" type="text/css" href="mine.css"/>
+    </head>
+    <body>
+        <!-- bootstrap的导航栏+bootstrap的标签页：tabbar -->
+        <ul id="nav-bottom" class="nav nav-pills navbar-fixed-bottom">
+        	<li class="active">
+        		<a href="#home" data-toggle="tab">
+        			<i class="nav-icon"></i>首页
+        		</a>
+        	</li>
+        	<li>
+        		<a href="#classify" data-toggle="tab">
+        			<i class="nav-icon"></i>分类
+        		</a>
+        	</li>
+        	<li>
+        		<a href="#car" data-toggle="tab">
+        			<i class="nav-icon"></i>购物车
+        		</a>
+        	</li>
+        	<li>
+        		<a href="#mine" data-toggle="tab">
+        			<i class="nav-icon"></i>我的
+        		</a>
+        	</li>
+        </ul>
+        <!-- bootstrap的标签页：四个页面 -->
+        <div class="tab-content">
+        	<!-- 首页 -->
+        	<div class="tab-pane in active" id="home">
+        		<!-- 首页头部 -->
+        		<header id="home">
+        			<!-- 首页头部的搜索框 -->
+        			<div id="search">
+        				<div id="search-left">
+        					<img src="img/home/mi.png" alt="" />
+        				</div>
+        				<div id="search-middle">
+        					<i></i>
+        					<span>搜索商品名称</span>
+        				</div>
+        				<div id="search-right">
+        					<img src="img/home/header.png"/>
+        				</div>
+        			</div>
+        			<!-- 首页头部的推荐 -->
+        			<div id="recommend">
+        				<div><span>推荐</span></div>
+        				<div><span>手机</span></div>
+        				<div><span>毕业季</span></div>
+        				<div><span>智能</span></div>
+        				<div><span>电视</span></div>
+        				<div><span>笔记本</span></div>
+        				<div><span>家电</span></div>
+        				<div><span>生活周边</span></div>
+        				<!-- 首页头部的下拉框 -->
+        				<div class="dropdown">
+        					<button class="btn btn-sm" data-toggle="dropdown"></button>
+        					<ul class="dropdown-menu">
+        						<li><a href="#">推荐</a></li>
+        						<li><a href="#">手机</a></li>
+        						<li><a href="#">毕业季</a></li>
+        						<li><a href="#">智能</a></li>
+        						<li><a href="#">电视</a></li>
+        						<li><a href="#">笔记本</a></li>
+        						<li><a href="#">家电</a></li>
+        						<li><a href="#">生活周边</a></li>
+        					</ul>
+        				</div>
+        			</div>
+        		</header>
+        		<!-- 主体部分 -->
+        		<div class="box">
+        			<!-- 轮播图 -->
+        			<div id="myCarousel" class="carousel slide">
+        				<!-- 轮播（Carousel）指标 -->
+					    <ol class="carousel-indicators">
+					        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					        <li data-target="#myCarousel" data-slide-to="1"></li>
+					        <li data-target="#myCarousel" data-slide-to="2"></li>
+					    </ol> 
+					    <!-- 轮播（Carousel）项目 -->
+					    <div class="carousel-inner">
+					        <div class="item active">
+					            <img src="img/home/carouse1.jpg" alt="First slide">
+					        </div>
+					        <div class="item">
+					            <img src="img/home/carouse2.jpg" alt="Second slide">
+					        </div>
+					        <div class="item">
+					            <img src="img/home/carouse3.jpg" alt="Third slide">
+					        </div>
+					    </div>
+					</div>	
+					<!-- 新品发布 -->
+					<div id="cell">
+						<ul>
+							<li><a href="#"><img src="img/home/xpfb.webp" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/xmzc.webp" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/xmcc.gif" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/yjhx.webp" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/cztm.webp" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/xmms.png" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/bjbrm.png" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/dsrm.png" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/jdrm.webp" alt="" /></a></li>
+							<li><a href="#"><img src="img/home/mfk.png" alt="" /></a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<!-- 小米8 -->
+					<div id="mi8">
+						<div>
+							<img style="width: 3.4rem;height: 5.08rem;" src="img/home/e842faaddebf768a7021864db6dd2b42.jpg" alt="" />
+						</div>
+						<div>
+							<img style="width: 3.4rem;height: 2.52rem;" src="img/home/b7b2063a4f85d95b37ec3a061c47b9c1.jpg" alt="" />
+						</div>
+						<div>
+							<img style="width: 3.4rem;height: 2.52rem;" src="img/home/1a77888b7de61b81e962b0e5b2f0835c.jpg" alt="" />
+						</div>
+						<div>
+							<img style="width: 6.9rem;height: 2.7rem;" src="img/home/848614790c07d37a08ed4822e8c57cbd.jpg" alt="" />
+						</div>
+					</div>
+        			<!-- 每日精选 -->
+        			<div id="choose">
+        				<div style="width: 6.9rem; height: 4.4rem;">
+        					<img style="width: 100%;height: 100%;" src="img/home/mrjx.jpg" alt="" />
+        				</div>
+        				<div class="item">
+        					<img src="img/home/d2bc1c7ff8c71628a28a5fce24caf245.jpg" alt="" />
+        					<img class="tag-icon" src="img/home/7e68ed30375367ea4c4a8200dc92d56e.png" alt="" />
+        					<div class="info">
+        						<div class="name">小米8 青春版</div>
+        						<div class="brief">索尼2400万自拍，超级夜景</div>
+        						<div class="price"><span>1049</span><span><del>1699</del></span></div>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<img src="img/home/5cba31dd-3cda-1975-7d9c-e95363fc311e!360x360.webp" alt="" />
+        					<img class="tag-icon" src="img/home/715ab7916be2845efba54b669ff3b5f4.png" alt="" />
+        					<div class="info">
+        						<div class="name">小米8 屏幕指纹版</div>
+        						<div class="brief">全新升级十大功能，骁龙845</div>
+        						<div class="price"><span>1999</span><span><del>2999</del></span></div>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<img src="img/home/354cea8ad076cee24738091c68f95b07.jpg" alt="" />
+        					<div class="info">
+        						<div class="name">黑鲨游戏手机 Helo</div>
+        						<div class="brief">双液冷，更能打</div>
+        						<div class="price"><span>3199</span><span><del>3499</del></span></div>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<img src="img/home/38a0996b-d3b7-a8f7-6997-b97004599a8e!360x360.webp" alt="" />
+        					<img class="tag-icon" src="img/home/37094a4a8ca8922f025e02cc13fbb03b.png" alt="" />
+        					<div class="info">
+        						<div class="name">红米6</div>
+        						<div class="brief">小屏高性能的双摄手机</div>
+        						<div class="price"><span>729</span><span><del>799</del></span></div>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<img src="img/home/2c506517-9477-c928-8e77-bee18b6818a1!360x360.webp" alt="" />
+        					<img class="tag-icon" src="img/home/bdb6af115a7285080be2fc7c1788d1d9.png" alt="" />
+        					<div class="info">
+        						<div class="name">红米6A</div>
+        						<div class="brief">好看耐用/轻巧省心</div>
+        						<div class="price"><span>549</span><span><del>599</del></span></div>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<img src="img/home/a20cff3d-2bd4-b98f-4eb5-fb08d8b43a2e!360x360.webp" alt="" />
+        					<img class="tag-icon" src="img/home/f2bd3574ff3a37757d535d932c5e27ec.png" alt="" />
+        					<div class="info">
+        						<div class="name">小米6X</div>
+        						<div class="brief">前置2000万，后置2000万</div>
+        						<div class="price"><span>999</span><span><del>1799</del></span></div>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<img src="img/home/a183eae8ce729005a1e1bf2907f6d51d.png" alt="" />
+        					<img class="tag-icon" src="img/home/8ca2ad1b37e6fd1842e3228fed62ebef.png" alt="" />
+        					<div class="info">
+        						<div class="name">小米Play(附带流量卡)</div>
+        						<div class="brief">自带高速流量</div>
+        						<div class="price"><span>1099</span></div>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<img src="img/home/a5be84661f1b82d1edef18f3a50a1b6f.jpg" alt="" />
+        					<img class="tag-icon" src="img/home/80787fbb2123de99b4f9045a6de15686.png" alt="" />
+        					<div class="info">
+        						<div class="name">小米平板4</div>
+        						<div class="brief">大屏、长续航、超薄电脑</div>
+        						<div class="price"><span>1099</span></div>
+        					</div>
+        				</div>
+        			</div>
+        			<hr class="line" />
+        			<div class="ti">更多小米手机产品 &gt;</div>
+        		</div>
+        	</div>
+        	<!-- 分类 -->
+        	<div class="tab-pane" id="classify">
+        		<!-- 头部条 -->
+        		<header class="headerbar">
+        			<img class="left" src="img/classify/arrow-left.png"/>
+        			分类
+        			<img class="right" src="img/home/search.png"/>
+        			<div class="clear"></div>
+        		</header>
+        		<!-- 主体部分 -->
+        		<div class="box">
+        			<!-- 左边导航条 -->
+        			<nav id="myScrollspy"> 
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active"><a href="#section1">&nbsp;新品</a></li>
+							<li><a href="#section2">&nbsp;众筹</a></li>
+							<li><a href="#section3">&nbsp;手机</a></li>
+							<li><a href="#section4">&nbsp;电视</a></li>
+							<li><a href="#section5">&nbsp;电脑</a></li>
+							<li><a href="#section6">&nbsp;智能</a></li>
+						</ul>		
+					</nav>
+					<!-- 右边滚动内容区 -->
+					<div id="scrollcontent" data-spy="scroll" data-target="#myScrollspy" data-offset="50">
+						<div id="section1">    
+							<div class="banner">
+								<img src="img/classify/新品/xp1.png"/>
+							</div>
+							<div class="title">
+								<span>手机</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/新品/xp2.png"/><div class="name">Redmi K20 Pro</div></li>
+									<li><img src="img/classify/新品/xp3.png"/><div class="name">Redmi K20</div></li>
+									<li><img src="img/classify/新品/xp4.png"/><div class="name">Redmi 7A</div></li>
+									<li><img src="img/classify/新品/xp5.png"/><div class="name">小米9</div></li>
+									<li><img src="img/classify/新品/xp6.png"/><div class="name">小米9 SE</div></li>
+									<li><img src="img/classify/新品/xp7.png"/><div class="name">Redmi Note 7 Pro</div></li>
+									<li><img src="img/classify/新品/xp8.png"/><div class="name">Redmi7</div></li>
+									<li><img src="img/classify/新品/xp9.png"/><div class="name">黑鲨游戏手机 2</div></li>
+									<li><img src="img/classify/新品/xp10.png"/><div class="name">Redmi Note 7</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<div class="title">
+								<span>家电</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/新品/xp11.png"/><div class="name">全面屏电视E55A</div></li>
+									<li><img src="img/classify/新品/xp12.png"/><div class="name">壁画电视65英寸</div></li>
+									<li><img src="img/classify/新品/xp13.png"/><div class="name">电视4X65英寸</div></li>
+									<li><img src="img/classify/新品/xp14.png"/><div class="name">立式空调C1</div></li>
+									<li><img src="img/classify/新品/xp15.png"/><div class="name">空调C1（一级能效）</div></li>
+									<li><img src="img/classify/新品/xp16.png"/><div class="name">洗烘一体机1A</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<div class="title">
+								<span>电脑</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/新品/xp17.png"/><div class="name">游戏本512GB</div></li>
+									<li><img src="img/classify/新品/xp18.png"/><div class="name">Air 12.5" 2019款</div></li>
+									<li><img src="img/classify/新品/xp19.png"/><div class="name">笔记本15.6" 独显</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+						</div>
+						<div id="section2"> 
+							<div class="title">
+								<span>众筹好物</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/众筹/zc1.png" alt="" /><div class="name">电磁炉</div></li>
+									<li><img src="img/classify/众筹/zc2.png" alt="" /><div class="name">智能积木越野车</div></li>
+									<li><img src="img/classify/众筹/zc3.png" alt="" /><div class="name">洁面机</div></li>
+									<li><img src="img/classify/众筹/zc4.png" alt="" /><div class="name">驱蚊器</div></li>
+									<li><img src="img/classify/众筹/zc5.png" alt="" /><div class="name">净水器 600G</div></li>
+									<li><img src="img/classify/众筹/zc6.png" alt="" /><div class="name">无限吸尘器</div></li>
+									<li><img src="img/classify/众筹/zc7.png" alt="" /><div class="name">投影仪 青春版</div></li>
+									<li><img src="img/classify/众筹/zc8.png" alt="" /><div class="name">电暖器</div></li>
+									<li><img src="img/classify/众筹/zc9.png" alt="" /><div class="name">照片打印机</div></li>
+									<li><img src="img/classify/众筹/zc10.png" alt="" /><div class="name">智能门锁</div></li>
+									<li><img src="img/classify/众筹/zc11.png" alt="" /><div class="name">米家吹风机</div></li>
+									<li><img src="img/classify/众筹/zc12.png" alt="" /><div class="name">洗衣机套装</div></li>
+									<li><img src="img/classify/众筹/zc13.png" alt="" /><div class="name">米家新风机</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<div class="title">
+								<span>家庭装</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/众筹/zc14.png" alt="" /><div class="name">温湿电子表三支装</div></li>
+									<li><img src="img/classify/众筹/zc15.png" alt="" /><div class="name">最生活10条装</div></li>
+									<li><img src="img/classify/众筹/zc16.png" alt="" /><div class="name">最生活100条装</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>	
+						</div>        
+						<div id="section3"> 
+							<div class="title">
+								<span>小米手机</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/手机/sj1.png" alt="" /><div class="name">小米9</div></li>
+									<li><img src="img/classify/手机/sj2.png" alt="" /><div class="name">小米9 SE</div></li>
+									<li><img src="img/classify/手机/sj3.png" alt="" /><div class="name">小米8 屏幕指纹版</div></li>
+									<li><img src="img/classify/手机/sj4.png" alt="" /><div class="name">小米8 青春版</div></li>
+									<li><img src="img/classify/手机/sj5.png" alt="" /><div class="name">小米MIX 2S</div></li>
+									<li><img src="img/classify/手机/sj6.png" alt="" /><div class="name">小米MIX 3</div></li>
+									<li><img src="img/classify/手机/sj7.png" alt="" /><div class="name">小米6X</div></li>
+									<li><img src="img/classify/手机/sj8.png" alt="" /><div class="name">小米Play</div></li>
+									<li><img src="img/classify/手机/sj9.png" alt="" /><div class="name">小米Max 3</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<div class="title">
+								<span>红米Redmi</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/手机/sj10.png" alt="" /><div class="name">Redmi K20 Pro</div></li>
+									<li><img src="img/classify/手机/sj11.png" alt="" /><div class="name">Redmi K20</div></li>
+									<li><img src="img/classify/手机/sj12.png" alt="" /><div class="name">Redmi 7A</div></li>
+									<li><img src="img/classify/手机/sj13.png" alt="" /><div class="name">Redmi Note 7A</div></li>
+									<li><img src="img/classify/手机/sj14.png" alt="" /><div class="name">Redmi Note 7</div></li>
+									<li><img src="img/classify/手机/sj15.png" alt="" /><div class="name">Redmi 7</div></li>
+									<li><img src="img/classify/手机/sj16.png" alt="" /><div class="name">红米6</div></li>
+									<li><img src="img/classify/手机/sj17.png" alt="" /><div class="name">红米6A</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<div class="title">
+								<span>移动4G+专区</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/手机/sj18.png" alt="" /><div class="name">小米MIX 2S</div></li>
+									<li><img src="img/classify/手机/sj19.png" alt="" /><div class="name">红米6</div></li>
+									<li><img src="img/classify/手机/sj20.png" alt="" /><div class="name">Redmi Note 7</div></li>
+									<li><img src="img/classify/手机/sj21.png" alt="" /><div class="name">红米6A</div></li>
+									<li><img src="img/classify/手机/sj22.png" alt="" /><div class="name">Redmi 7A 移动4G</div></li>
+									<div class="clear"></div>
+								</ul>
+								<div class="enter"><img src="img/classify/enter.webp" alt="" /></div>
+							</div>
+							<div class="title">
+								<span>手机配件</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/手机/sj23.png" alt="" /><div class="name">以旧换新</div></li>
+									<li><img src="img/classify/手机/sj24.png" alt="" /><div class="name">定位电话</div></li>
+									<li><img src="img/classify/手机/sj25.png" alt="" /><div class="name">充电器</div></li>
+									<li><img src="img/classify/手机/sj26.png" alt="" /><div class="name">数据线</div></li>
+									<li><img src="img/classify/手机/sj27.png" alt="" /><div class="name">贴膜</div></li>
+									<li><img src="img/classify/手机/sj28.png" alt="" /><div class="name">保护壳</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+						</div>
+						<div id="section4">  
+							<div class="title">
+								<span>电视</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/电视/ds1.png" alt="" /><div class="name">32-40英寸</div></li>
+									<li><img src="img/classify/电视/ds2.png" alt="" /><div class="name">43英寸</div></li>
+									<li><img src="img/classify/电视/ds3.png" alt="" /><div class="name">49-50英寸</div></li>
+									<li><img src="img/classify/电视/ds4.png" alt="" /><div class="name">55-58英寸</div></li>
+									<li><img src="img/classify/电视/ds5.png" alt="" /><div class="name">65-75英寸</div></li>
+									<li><img src="img/classify/电视/ds6.png" alt="" /><div class="name">精光投影电视</div></li>
+									<div class="clear"></div>
+								</ul>
+								<div class="enter"><img src="img/classify/ds.webp" alt="" /></div>
+							</div>
+							<div class="title">
+								<span>盒子</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/电视/ds7.png" alt="" /><div class="name">盒子4</div></li>
+									<li><img src="img/classify/电视/ds8.png" alt="" /><div class="name">盒子4c</div></li>
+									<li><img src="img/classify/电视/ds9.png" alt="" /><div class="name">盒子4 SE套装版</div></li>
+									<li><img src="img/classify/电视/ds10.png" alt="" /><div class="name">盒子3增强版</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<div class="title">
+								<span>音响</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/电视/ds11.png" alt="" /><div class="name">小米电视音响</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<div class="title">
+								<span>电视配件与会员</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/电视/ds12.png" alt="" /><div class="name">会员卡</div></li>
+									<li><img src="img/classify/电视/ds13.png" alt="" /><div class="name">遥控器</div></li>
+									<li><img src="img/classify/电视/ds14.png" alt="" /><div class="name">线材转接器</div></li>
+									<li><img src="img/classify/电视/ds15.png" alt="" /><div class="name">麦克风</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+						</div> 
+						<div id="section5">  
+							<div class="title">
+								<span>电脑</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/电脑/dn1.png" alt="" /><div class="name">小米Air 12.5"</div></li>
+									<li><img src="img/classify/电脑/dn2.png" alt="" /><div class="name">小米Air 13.3"</div></li>
+									<li><img src="img/classify/电脑/dn3.png" alt="" /><div class="name">笔记本 15.6" 独显</div></li>
+									<li><img src="img/classify/电脑/dn4.png" alt="" /><div class="name">RedmiBook 14</div></li>
+									<li><img src="img/classify/电脑/dn5.png" alt="" /><div class="name">笔记本15.6" 集显</div></li>
+									<li><img src="img/classify/电脑/dn6.png" alt="" /><div class="name">小米Pro 15.6"</div></li>
+									<li><img src="img/classify/电脑/dn7.png" alt="" /><div class="name">小米Pro 15.6" GTX</div></li>
+									<li><img src="img/classify/电脑/dn8.png" alt="" /><div class="name">小米游戏本</div></li>
+									<li><img src="img/classify/电脑/dn9.png" alt="" /><div class="name">小米平板</div></li>
+									<div class="clear"></div>
+								</ul>
+								<div class="enter"><img src="img/classify/dn.webp"/></div>
+							</div>
+							<div class="title">
+								<span>电脑配件</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/电脑/dn10.png" alt="" /><div class="name">鼠标/鼠标垫</div></li>
+									<li><img src="img/classify/电脑/dn11.png" alt="" /><div class="name">机械键盘</div></li>
+									<li><img src="img/classify/电脑/dn12.png" alt="" /><div class="name">游戏键盘</div></li>
+									<li><img src="img/classify/电脑/dn13.png" alt="" /><div class="name">游戏鼠标</div></li>
+									<li><img src="img/classify/电脑/dn14.png" alt="" /><div class="name">转接线/电源</div></li>
+									<li><img src="img/classify/电脑/dn15.png" alt="" /><div class="name">笔记本双肩背包</div></li>
+									<li><img src="img/classify/电脑/dn16.png" alt="" /><div class="name">适配器</div></li>
+									<li><img src="img/classify/电脑/dn17.png" alt="" /><div class="name">笔记本贴纸</div></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+						</div>
+						<div id="section6">  
+							<div class="title">
+								<span>智能</span>
+							</div>
+							<div class="item">
+								<ul>
+									<li><img src="img/classify/智能/zn1.png" alt="" /><div class="name">小爱老师</div></li>
+									<li><img src="img/classify/智能/zn2.png" alt="" /><div class="name">小爱音响</div></li>
+									<li><img src="img/classify/智能/zn3.png" alt="" /><div class="name">手环</div></li>
+									<li><img src="img/classify/智能/zn4.png" alt="" /><div class="name">照片打印机</div></li>
+									<li><img src="img/classify/智能/zn5.png" alt="" /><div class="name">小爱智能闹钟</div></li>
+									<li><img src="img/classify/智能/zn6.png" alt="" /><div class="name">照相机</div></li>
+									<li><img src="img/classify/智能/zn7.png" alt="" /><div class="name">VR</div></li>
+									<li><img src="img/classify/智能/zn8.png" alt="" /><div class="name">智能家庭</div></li>
+									<li><img src="img/classify/智能/zn9.png" alt="" /><div class="name">智能门锁</div></li>
+									<li><img src="img/classify/智能/zn10.png" alt="" /><div class="name">智能门铃</div></li>
+									<li><img src="img/classify/智能/zn11.png" alt="" /><div class="name">智能手表</div></li>
+									<div class="clear"></div>
+								</ul>
+								<div class="enter"><img src="img/classify/zn.webp"/></div>
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        	<!-- 购物车 -->
+        	<div class="tab-pane" id="car">
+        		<!-- 头部条 -->
+        		<header class="headerbar">
+        			<img class="left" src="img/classify/arrow-left.png"/>
+        			购物车
+        			<img class="right" src="img/home/search.png"/>
+        			<div class="clear"></div>
+        		</header>
+        		<!-- 主体部分 -->
+        		<div class="box">
+        			<!-- 未登录 -->
+        			<div class="nologin">
+        				<span class="flex">登录后享受更多优惠</span>
+        				<em class="flex">去登录 </em>
+        			</div>
+        			<!-- 购物车空 -->
+        			<div class="noitems">
+        				<img src="img/car/car.png"/>
+        				<span>购物车还是空的</span>
+        				<em>去逛逛</em>
+        			</div>
+        			<div class="recommend">
+        				<div class="recommend-top">
+        					<img src="img/car/recommend.png"/>
+        				</div>
+        				<div class="recommend-list">
+        					<div class="goods">
+        						<img src="img/car/c1.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">照片打印机 特惠套装</div>
+        							<div class="goods-price"><span>699</span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c2.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">小米无限车充</div>
+        							<div class="goods-price"><span>169</span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c3.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米家互联网立式空调C1</div>
+        							<div class="goods-price"><span>3499</span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c4.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米家互联网空调C1（一级能效）</div>
+        							<div class="goods-price"><span>2299</span><span><del>2799</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c5.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米家互联网空调（一级能效）</div>
+        							<div class="goods-price"><span>2199</span><span><del>2699</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c6.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米家空调</div>
+        							<div class="goods-price"><span>1599</span><span><del>1799</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c7.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">小米电视3s 65"影院版</div>
+        							<div class="goods-price"><span>1999</span><span><del>5699</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c8.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米家互联网烟灶套装（天然气）</div>
+        							<div class="goods-price"><span>1999</span><span><del>2298</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c9.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米家互联网空调</div>
+        							<div class="goods-price"><span>1899</span><span><del>2299</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c10.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">小米盒子4 SE套装版</div>
+        							<div class="goods-price"><span>189</span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c11.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米家互联网空调C1</div>
+        							<div class="goods-price"><span>2099</span><span><del>2399</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c12.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">黑鲨双翼手柄单滑轨保护壳套装-小米8定制版</div>
+        							<div class="goods-price"><span>228</span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c13.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米家互联网烟灶套装（液化石油气）</div>
+        							<div class="goods-price"><span>1999</span><span><del>2298</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c14.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">滤水壶套装（1壶16芯）</div>
+        							<div class="goods-price"><span>495</span><span><del>594</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c15.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">米连卡随身路由器套装</div>
+        							<div class="goods-price"><span>599</span><span><del>948</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c16.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">小米壁画电视 65英寸</div>
+        							<div class="goods-price"><span>6999</span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c17.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">Air 13.3" 2019款</div>
+        							<div class="goods-price"><span>5899</span><span><del>6299</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c18.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">黑鲨手柄套装</div>
+        							<div class="goods-price"><span>188.9</span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c19.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">8H护颈乳胶枕两件装</div>
+        							<div class="goods-price"><span>438</span><span><del>478</del></span></div>
+        						</div>
+        					</div>
+        					<div class="goods">
+        						<img src="img/car/c20.png" alt="" />
+        						<div class="goods-info">
+        							<div class="goods-name">净水器滤芯全年套装</div>
+        							<div class="goods-price"><span>234</span><span><del>256</del></span></div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<!-- 我的 -->
+        	<div class="tab-pane" id="mine">
+        		<header id="login">
+        			<div class="bg">
+        				<img src="img/mine/user.png" alt="" />
+        				<span>登陆/注册</span>
+        			</div>
+        		</header>
+        		<div class="b1">
+        			<div class="cite">我的订单</div>
+        			<div class="order">全部订单</div>
+        		</div>
+        		<div class="b2">
+        			<ul>
+        				<li>
+        					<div style="background-image: url(img/mine/waitpay.png);"></div>
+        					<span>待付款</span>
+        				</li>
+        				<li>
+        					<div style="background-image: url(img/mine/waitreceive.png);"></div>
+        					<span>待收货</span>
+        				</li>
+        				<li>
+        					<div style="background-image: url(img/mine/waitback.png);"></div>
+        					<span>退换修</span>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="items">
+        			<ul>
+        				<li style="background-image: url(img/mine/huiyuanzhongxin.png);">
+        					<div style="border-bottom: 1px solid rgba(0,0,0,.15);">
+        						<span>会员中心</span>
+        					</div>
+        				</li>
+        				<li style="background-image: url(img/mine/youhuika.png);">
+        					<div>
+        						<span>我的优惠</span>
+        					</div>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="items">
+        			<ul>
+        				<li style="background-image: url(img/mine/fuwuzhongxin.png);">
+        					<div style="border-bottom: 1px solid rgba(0,0,0,.15);">
+        						<span>服务中心</span>
+        					</div>
+        				</li>
+        				<li style="background-image: url(img/mine/xiaomizhijia.png);">
+        					<div>
+        						<span>小米之家</span>
+        					</div>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="items">
+        			<ul>
+        				<li style="background-image: url(img/mine/fmatongdao.png);">
+        					<div>
+        						<span>F码通道</span>
+        					</div>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="items">
+        			<ul>
+        				<li style="background-image: url(img/mine/setting.png);">
+        					<div>
+        						<span>设置</span>
+        					</div>
+        				</li>
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+        
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="bootstrap/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

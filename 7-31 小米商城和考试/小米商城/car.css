@@ -1,0 +1,90 @@
+#car{
+	padding: 1.2rem 0;
+}
+#car .nologin{
+	height: 1.04rem;
+	padding: 0 .56rem 0 .32rem;
+	line-height: 1.04rem;
+	position: relative;
+	color: rgba(0,0,0,.54);
+}
+#car .nologin span{
+	font-size: .32rem;
+	color: rgba(0,0,0,.87);
+}
+#car .nologin em{
+	position: absolute;
+	right: .25rem;
+	font-style: normal;
+	font-size: .24rem;
+}
+#car .nologin em:after{
+	content: ">";
+	font-size: .35rem;
+}
+#car .noitems{
+	background: #ebebeb;
+	padding: .2rem;
+	text-align: center;
+	height: 1.2rem;
+	font-size: .24rem;
+}
+#car .noitems img{
+	width: .8rem;
+	height: .8rem;
+}
+#car .noitems span{
+	line-height: 0.8rem;
+	color: rgba(0,0,0,.27);
+}
+#car .noitems em{
+	border: 1px solid rgba(0,0,0,.15);
+	box-sizing: border-box;
+	height: .5rem;
+	line-height: .5rem;
+	padding: .14rem .24rem;
+	color: rgba(0,0,0,.87);
+	font-style: normal;
+}
+#car .recommend .recommend-top img{
+	width: 100%;
+}
+#car .recommend .recommend-list .goods{
+	float: left;
+	margin: .05rem;
+	width: 3.35rem;
+	height: 4.25rem;
+	overflow: hidden;
+}
+#car .recommend .recommend-list:after{
+ 	content: "";
+ 	display: block;
+ 	clear: both;
+}
+#car .recommend .recommend-list .goods img{
+	width: 100%;
+}
+#car .recommend .goods-name{
+	font-size: .28rem;
+	white-space: nowrap;
+}
+#car .recommend .goods-price:before{
+	content: "￥";
+	font-size: .2rem;
+}
+#car .recommend .goods-price{
+	font-size: .32rem;
+	color: #ff6700;
+	margin-top: .1rem;
+	padding-left: .5em;
+	line-height: 1em;
+}
+#car .recommend .goods-price span:nth-child(2):before{
+	content: "￥";
+	font-size: .15rem;
+}
+#car .recommend .goods-price span:nth-child(2){
+	font-size: .22rem;
+	margin-left: .1rem;
+	color: rgba(0,0,0,.54);
+}

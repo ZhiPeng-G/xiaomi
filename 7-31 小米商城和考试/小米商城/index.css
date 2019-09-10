@@ -1,0 +1,308 @@
+*{
+	box-sizing: border-box;
+}
+.clear{
+	clear: both;
+}
+/* 底部导航栏 */
+#nav-bottom{
+	font-size: 0.22rem;
+	background-color: white
+}
+#nav-bottom li{
+	margin: 0;
+	width: 25%;
+	text-align: center;
+}
+#nav-bottom li a{
+	background-color: white;
+	color: #99999f;
+}
+#nav-bottom li.active a{
+	color: #f56d02;
+}
+#nav-bottom .nav-icon{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-size: cover;
+	margin: 0 auto .1rem;
+}
+#nav-bottom li:nth-child(1) .nav-icon{
+	background-image: url(img/home/tabbar/home.png);
+}
+#nav-bottom li:nth-child(2) .nav-icon{
+	background-image: url(img/home/tabbar/classify.png);
+}
+#nav-bottom li:nth-child(3) .nav-icon{
+	background-image: url(img/home/tabbar/car.png);
+}
+#nav-bottom li:nth-child(4) .nav-icon{
+	background-image: url(img/home/tabbar/mine.png);
+}
+#nav-bottom li.active:nth-child(1) .nav-icon{
+	background-image: url(img/home/tabbar/home-hl.png);
+}
+#nav-bottom li.active:nth-child(2) .nav-icon{
+	background-image: url(img/home/tabbar/classify-hl.png);
+}
+#nav-bottom li.active:nth-child(3) .nav-icon{
+	background-image: url(img/home/tabbar/car-hl.png);
+}
+#nav-bottom li.active:nth-child(4) .nav-icon{
+	background-image: url(img/home/tabbar/mine-hl.png);
+}
+
+/* 首页 */
+#home{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background-color: #f5f5f5;
+}
+/* 首页头部 */
+header#home{
+	background-color: #f2f2f2;
+	padding: .1rem 0;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+}
+/* 首页头部搜索框 */
+#search{
+	display: flex;
+	justify-content: space-between;
+}
+#search-left{
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: .6rem;
+	margin: .1rem .2rem;
+}
+#search-left img{
+	width: 80%;
+}
+#search-middle{
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: .3rem;
+	color: #bbb;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background-color: white;
+	border: solid .02rem #dddddd;
+}
+#search-middle i{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-image: url(img/home/search.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#search-middle span{
+	display: inline-block;
+	vertical-align: top;
+}
+#search-right{
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: .6rem;
+	margin: .1rem .2rem;
+}
+#search-right img{
+	width: .4rem;
+}
+/* 首页头部推荐 */
+#recommend{
+	overflow-x: auto;
+	background: #f2f2f2;
+	font-size: .26rem;
+	white-space: nowrap;
+}
+#recommend div{
+	display: inline-block;
+	padding: 0 .25rem;
+	margin-top: .15rem;
+	font-size: .26rem;
+	white-space: nowrap;
+}
+#recommend div span{
+	color: #777;
+	border-color: rgb(237, 91, 0);
+	display: inline-block;
+	line-height: .55rem;
+}
+#recommend div:nth-child(1) span{
+	color: rgb(237, 91, 0);
+	border-bottom: .04rem solid rgb(237, 91, 0);
+}
+/* 首页头部下拉框 */
+#recommend div.dropdown{
+	position: absolute;
+	right: -0.15rem;
+	bottom: .1rem;
+}
+#recommend div.dropdown button{
+	width: .6rem;
+	height: .6rem;
+	background-image: url(img/home/arrow.png);
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 .5rem .3rem #f2f2f2;
+	transition: transform .2s;
+}
+#recommend div.dropdown button[aria-expanded="true"]{
+	transform: rotate(180deg);
+}
+#recommend ul.dropdown-menu{
+	left: -6.3rem;
+	top: 0.5rem;
+	width: 7.3rem;
+	background-color: #f2f2f2;
+}
+#recommend ul.dropdown-menu:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#recommend ul.dropdown-menu li{
+	float: left;
+	margin: .13rem;
+	width: 1.52rem;
+	height: .56rem;
+	text-align: center;
+	background-color: white;
+	border: 1px solid #e5e5e5;
+	border-radius: .1rem;
+	font-size: .25rem;
+}
+#recommend ul.dropdown-menu li a{
+	padding: 0;
+	line-height: .56rem;
+	color: #747488;
+}
+/* 首页主体部分 */
+.box{
+	padding: 0 0.15rem;
+}
+/* 首页主体轮播图 */
+#myCarousel .carousel-inner .item img{
+	width: 100%;
+}
+#myCarousel .carousel-indicators li{
+	width: .16rem;
+	height: .16rem;
+	background: #fff;
+	opacity: .2;
+}
+#myCarousel .carousel-indicators li.active{
+	opacity: 1;
+}
+/* 首页主体新品发布 */
+#cell ul{
+	margin: 0;
+	padding: 0;
+}
+#cell ul li{
+	list-style: none;
+	float: left;
+}
+#cell ul li img{
+	width: 1.38rem;
+	height: 1.5rem;
+}
+/* 首页主体小米8 */
+#mi8{
+	margin: .1rem 0;
+}
+#mi8 div{
+	float: left;
+	margin: 0.02rem;
+}
+#mi8:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 首页主体每日精选 */
+#choose{
+	margin-top: .1rem;
+	background-color: white;
+}
+#choose div.item{
+	float: left;
+}
+#choose:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#choose .item{
+	margin: 0.025rem;
+	width: 3.4rem;
+	height: 5rem;
+	position: relative;
+}
+#choose .item img{
+	width: 100%;
+}
+#choose .item img.tag-icon{
+	width: 1rem;
+	position: absolute;
+	right: 0;
+	bottom: 1.7rem;
+}
+#choose .item .info{
+	padding: 0 0.2rem;
+	text-align: left;
+}
+#choose .item .name{
+	font-size: .28rem;
+	color: rgba(0,0,0,.87);
+}
+#choose .item .brief{
+	margin-top: .06rem;
+	font-size: .22rem;
+	line-height: .3rem;
+	color: rgba(0,0,0,.54);
+}
+#choose .item .price span:nth-child(1):before{
+	content: "￥";
+	font-size: .2rem;
+}
+#choose .item .price span:nth-child(1):after{
+	content: "起";
+	font-size: .2rem;
+}
+#choose .item .price span:nth-child(1) {
+	font-size: .28rem;
+	color: #ea625b;
+	height: 1.5em;
+	line-height: 1.5em;
+}
+#choose .item .price span:nth-child(2):before{
+	content: "￥";
+	font-size: .18rem;
+}
+#choose .item .price span:nth-child(2){
+	margin: 0 .1rem;
+	font-size: .22rem;
+	color: rgba(0,0,0,.54);
+}
+hr.line{
+	background-color: #e0e0e0;
+	width: 100%;
+	height: 0.05rem;
+	margin: 0;
+}
+div.ti{
+	background: #fff;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .28rem;
+	text-align: center;
+	color: rgba(0,0,0,.6);
+}
